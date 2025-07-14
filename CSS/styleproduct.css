@@ -1,0 +1,268 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+.navbar-container {
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+
+.navbar {
+    max-width: 1560px;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+.navbar-left div {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+    .navbar-left div:hover,
+    .find-a-store:hover {
+        color: red;
+    }
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+    .navbar-left > *,
+    .navbar-right > * {
+        margin: 10px;
+    }
+
+
+    .navbar-left img {
+        margin-right: 20px;
+        width: 50px;
+    }
+
+
+
+.find-a-store {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.sign-in,
+.join-now {
+    font-weight: 500;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.join-now {
+    background-color: black;
+    color: white;
+}
+
+    .join-now:hover {
+        background-color: rgb(0,0,0,0.7);
+    }
+
+.sign-in:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/*slider-product*/
+
+.slideshow-container {
+    max-width:100%;
+    position: relative;
+    margin:120px 40px 40px 40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display:none;
+    
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/*------------------*/
+.product-contaier{
+    max-width:100%;
+    width:100%;
+    position:relative;
+    margin:auto;
+   
+}
+
+.product-title h1{
+    margin:100px 40px 0 40px;
+    font-family:Arial;
+    color: red;
+    padding: 10px 10px 10px 5px;
+    
+}
+
+    
+.product-title h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    height: 34px;
+    background-color: red;
+    transform: translateY(-50%);
+    left: 10px;
+    margin-top:-19px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.product-content{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+    .product-content img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 280px;
+        height: 280px;
+        padding: 40px 20px 20px 20px;
+        margin: 20px 30px 20px 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .product-content img:hover {
+            transform: scale(1.1);
+        }
+
+        /*footer-contach copy by doan trung quy*/
+
+/*footer contach*/
+.footer {
+    background-color: #1140b9;
+    padding: 50px;
+    text-align: left;
+    font-family: Arial;
+}
+
+.footer-content {
+    color: #fff;
+    opacity: 1;
+    font-size: 25px;
+}
+
+
+.footer-content1 {
+    color: #fff;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.facebook, .instagram, .twitter, .youtube {
+}
+
+.facebook, .instagram, .twitter, .youtube {
+}
+
+.footer-avatar img {
+    border: 2px solid black;
+    border-radius: 25%;
+    width: 35%;
+    display: block;
+    float: right;
+    margin-top: -25%;
+    justify-content: center;
+}
+
+.footer-title h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    height: 35px;
+    background-color: #fff;
+    transform: translateY(-50%);
+    left: 30px;
+    margin-top: -18px;
+    align-items: center;
+    border-radius: 5px;
+}
